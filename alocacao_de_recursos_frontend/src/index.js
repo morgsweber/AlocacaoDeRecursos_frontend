@@ -1,14 +1,24 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import LoginButton from './components/login-button';
+import LogoutButton from './components/logout-button';
+import Profile from './components/profile';
 import reportWebVitals from './reportWebVitals';
+import { Auth0Provider } from '@auth0/auth0-react';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <Auth0Provider
+    domain={"alocacao-de-recursos.us.auth0.com"}
+    clientId={"1atUjfY2HNIL4swEXvG8Iqjur7NI0pHO"}
+    redirectUri={window.location.origin}
+  >
+    <Profile />
+    <LoginButton />
+    <LogoutButton />
+  </Auth0Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function
