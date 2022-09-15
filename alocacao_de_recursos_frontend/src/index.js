@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import LoginButton from './components/login-button';
 import LogoutButton from './components/logout-button';
-import Profile from './components/profile';
+//import Profile from './components/profile';
+import AppLogo from './components/app-logo';
 import reportWebVitals from './reportWebVitals';
 import { Auth0Provider } from '@auth0/auth0-react';
 
@@ -15,9 +16,15 @@ root.render(
     clientId={"1atUjfY2HNIL4swEXvG8Iqjur7NI0pHO"}
     redirectUri={window.location.origin}
   >
-    <Profile />
-    <LoginButton />
-    <LogoutButton />
+    <div class="container">
+    
+      <div>
+        <AppLogo/>
+        <LoginButton />
+        <LogoutButton />
+      </div>
+    </div>
+
   </Auth0Provider>
 );
 
