@@ -1,4 +1,4 @@
-import Home from "./pages/home";
+import Login from "./pages/login";
 import React from "react";
 import "./App.css";
 import { Routes, Route } from 'react-router-dom';
@@ -8,7 +8,12 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route path="home" element={<Home />} />
+        {/* public routes */}
+        <Route path="login" element={<Login />} />
+
+        {/* protected routes */}
+
+        {/* catch all */}
       </Route>
       
     </Routes>
