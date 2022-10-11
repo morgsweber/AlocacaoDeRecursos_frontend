@@ -1,13 +1,13 @@
 import { withAuthenticationRequired } from "@auth0/auth0-react";
 import Loading from "../pages/loading";
 
-function Disciplinas() {
+function Adm() {
   return (
-    <div class="Disciplinas">
-      <h2>Disciplinas</h2>
+    <div class="Adm">
+      <h2>Adm</h2>
     </div>
   );
 }
-export default withAuthenticationRequired(Disciplinas, {
+export default withAuthenticationRequired(Adm, {
   onRedirecting: () => <Loading />,
 });

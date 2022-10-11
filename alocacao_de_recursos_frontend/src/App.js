@@ -1,6 +1,8 @@
 import Login from "./pages/login";
 import Missing from "./pages/missing";
-import Disciplinas from "./pages/disciplinas";
+import Aluno from "./pages/aluno";
+import Adm from "./pages/adm";
+import Professor from "./pages/professor";
 import React from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
@@ -14,7 +16,9 @@ function App() {
         <Route path="login" element={<Login />} />
 
         {/* protected routes */}
-        <Route path="disciplinas" element={<Disciplinas />} />
+        <Route path="aluno" element={<Aluno />} />
+        <Route path="professor" element={<Professor />} />
+        <Route path="adm" element={<Adm />} />
 
         {/* catch all */}
         <Route path="*" element={<Missing />} />
