@@ -1,3 +1,6 @@
+import { withAuthenticationRequired } from "@auth0/auth0-react";
+import Loading from "../pages/loading";
+
 function Disciplinas() {
   return (
     <div class="Disciplinas">
@@ -5,5 +8,6 @@ function Disciplinas() {
     </div>
   );
 }
-
-export default Disciplinas;
+export default withAuthenticationRequired(Disciplinas, {
+  onRedirecting: () => <Loading />,
+});
