@@ -2,7 +2,7 @@ import LoginButton from "./components/login-button";
 import LogoutButton from "./components/logout-button";
 import AppLogo from "./components/app-logo";
 import React from "react";
-import "./login.css";
+import "./pages_css/login.css";
 
 function Login() {
   return (
