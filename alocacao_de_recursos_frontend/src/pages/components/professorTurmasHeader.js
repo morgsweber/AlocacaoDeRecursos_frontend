@@ -1,6 +1,22 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 
 function Header() {
-  return <h1> Disciplinas </h1>;
+  return(
+    <div>
+
+      <h1>    
+      
+      <Link to={".././login"}>
+        <button>
+          login
+        </button>
+      </Link>
+      </h1>
+    </div>
+
+  
+  
+  );
 }
 export default Header;
