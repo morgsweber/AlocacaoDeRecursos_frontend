@@ -20,26 +20,27 @@ function ProfessorTurmas() {
 
     var count = 0;
     const turmasArray = [
-      "turma1",
-      "turma2",
-      "turma3",
-      "turma4",
-      "turma5",
-      "turma6",
+      "turma1","sala1","prof1",
+      "turma2","sala2","prof2",
+      "turma3","sala3","prof3",
     ];
     //const mainEl = document.querySelector("#main-turmas");
 
     for (let index = 0; index < turmasArray.length; index++) {
-      const turmasContainerEl = document.createElement("button");
-      turmasContainerEl.classList.add("turmas-container");
-      mainEl.appendChild(turmasContainerEl);
+      if (index%3 === 0){
+        const turmasContainerEl = document.createElement("button");
+        turmasContainerEl.classList.add("turmas-container");
+        mainEl.appendChild(turmasContainerEl);
+      }
     }
 
     const turmasContainerEl = document.querySelectorAll(".turmas-container");
     console.log(turmasContainerEl.length);
     turmasContainerEl.forEach((turmasContainerEl) => {
-      turmasContainerEl.innerText = turmasArray[count];
-      count = count + 1;
+      if(count%3 === 0){
+        turmasContainerEl.innerHTML = `<div>` + turmasArray[count] + turmasArray[count + 1] + turmasArray[count + 2] + `</div>`;
+        count = count + 3;
+      }
     });
   }, []);
 
