@@ -38,7 +38,7 @@ function ProfessorTurmas() {
     console.log(turmasContainerEl.length);
     turmasContainerEl.forEach((turmasContainerEl) => {
       if(count%3 === 0){
-        turmasContainerEl.innerHTML = `<div>` + turmasArray[count] + turmasArray[count + 1] + turmasArray[count + 2] + `</div>`;
+        turmasContainerEl.innerHTML = `<div class="turmaDetails">` + turmasArray[count] + turmasArray[count + 1] + turmasArray[count + 2] + `</div>`;
         count = count + 3;
       }
     });
