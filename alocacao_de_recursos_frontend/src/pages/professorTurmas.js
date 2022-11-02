@@ -2,8 +2,10 @@ import { withAuthenticationRequired } from "@auth0/auth0-react";
 import Loading from "./loading";
 import Header from "./components/professorTurmasHeader";
 import Footer from "./components/professorTurmasFooter";
+import Sidebar from "./components/sidebar"
 import { useRef, useEffect } from "react";
 import "./pages_css/professorTurmas.css";
+import "./pages_css/sidebar.css"
 
 function ProfessorTurmas() {
   const ref = useRef(null);
@@ -43,19 +45,25 @@ function ProfessorTurmas() {
   }, []);
 
   return (
-    <div>
-      <Header />
-      <div
-        ref={ref}
-        id="main-turmas"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          flexWrap: "wrap",
-        }}
-      ></div>
-      <Footer />
+    <div> 
+        <Sidebar />
+
+        <div class="main">
+          <Header />
+
+          <div
+            ref={ref}
+            id="main-turmas"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              flexWrap: "wrap",
+            }}
+          ></div>
+
+        </div>
     </div>
+    
   );
 }
 export default withAuthenticationRequired(ProfessorTurmas, {
