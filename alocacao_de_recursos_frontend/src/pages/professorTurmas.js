@@ -5,7 +5,7 @@ import Footer from "./components/professorTurmasFooter";
 import Sidebar from "./components/sidebar"
 import { useRef, useEffect } from "react";
 import "./pages_css/professorTurmas.css";
-import "./pages_css/sidebar.css"
+import "./pages_css/sidebar.css";
 
 function ProfessorTurmas() {
   const ref = useRef(null);
