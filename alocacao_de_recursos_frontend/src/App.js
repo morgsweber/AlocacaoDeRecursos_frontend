@@ -37,7 +37,6 @@ function App() {
 
         {/* catch all */}
         <Route path="*" element={<Missing />} />
-
       </Route>
     </Routes>
   );
