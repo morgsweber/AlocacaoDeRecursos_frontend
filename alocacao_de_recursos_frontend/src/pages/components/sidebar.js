@@ -1,16 +1,20 @@
 import React from "react";
 import { Link } from 'react-router-dom'
-import logo from './PUCRS-LOGO.png';
+import logo from '../.././Icons/pucrs.png'
+import group from '../.././Icons/group.png'
+import logout from '../.././Icons/logout.png'
+import calendar from '../.././Icons/calendar.png'
 
 function Header() {
     return(
         <div class="sidenav">
-            <img class="symbol" src={logo} alt="puc_logo"></img>
-            <a href="#">symbol1</a>
-            <a href="#">symbol2</a>
+            <div><img class="symbol" src={logo} alt="puc_logo"></img></div>
+            <div><img class="symbol" src={group} alt="puc_logo"></img></div>
+            <div><img class="symbol" src={calendar} alt="puc_logo"></img></div>
 
             <div class="symbolDown">
-                <a href="#">symbol3</a>
+                <img class="symbol" src={logout} alt="puc_logo"></img>
+                
             </div>
         </div>
     );

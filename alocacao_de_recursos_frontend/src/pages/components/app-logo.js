@@ -1,5 +1,5 @@
 import React from "react";
-import logo from './PUCRS-LOGO.png';
+import logo from '../.././Icons/pucrs.png'
 
 const AppLogo = () => {
 
