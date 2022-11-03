@@ -1,7 +1,11 @@
+import "./pages_css/loading.css";
+
 function Loading() {
   return (
-    <div class="Loading">
-      <h2>Loading</h2>
+    <div class="loading">
+      <svg viewBox="25 25 50 50">
+        <circle cx="50" cy="50" r="20"></circle>
+      </svg>
     </div>
   );
 }
