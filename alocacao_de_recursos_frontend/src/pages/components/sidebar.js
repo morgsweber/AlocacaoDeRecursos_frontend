@@ -9,13 +9,20 @@ function Header() {
     return(
         <div class="sidenav">
             <div><img class="symbol" src={logo} alt="puc_logo"></img></div>
-            <div><img class="symbol" src={group} alt="puc_logo"></img></div>
-            <div><img class="symbol" src={calendar} alt="puc_logo"></img></div>
+            
+            <Link to={".././professor/turmas"}>
+                <a><img class="symbol" src={group} alt="puc_logo"></img></a>
+            </Link>
 
-            <div class="symbolDown">
-                <img class="symbol" src={logout} alt="puc_logo"></img>
-                
-            </div>
+            <Link to={".././professor/horarios"}>
+                <a><img class="symbol" src={calendar} alt="puc_logo"></img></a>
+            </Link>
+
+            <Link to={".././login"}>
+                <a><img class="symbol" src={logout} alt="puc_logo"></img></a>
+            </Link>
+
+
         </div>
     );
 }
