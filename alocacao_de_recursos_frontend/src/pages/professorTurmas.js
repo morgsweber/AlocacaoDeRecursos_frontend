@@ -32,7 +32,7 @@ export const ProfessorTurmas = () => {
   return (
     <> 
         <Sidebar />
-        <div class="main">
+        <div class>
           <Header />
           <div class="main-turmas">
             {turmasJson.map((data, key) => {
