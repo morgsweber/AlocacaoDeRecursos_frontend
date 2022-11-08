@@ -33,23 +33,26 @@ export const ProfessorTurmas = () => {
         <Sidebar />
         <div class="main">
           <div class="header">
-            Turmas Ministradas
+            <p>Disciplinas</p>
           </div>
-
           <div class="main-turmas">
+
             {turmasJson.map((data, key) => {
             return (
               <button key={key} class="turmas-container">
-                {data.discipline +
-                  " , " +
-                  data.teacherName +
-                  ", " +
-                  data.groupId}
+                <p>
+                  <span class="f1">{data.discipline}</span>
+                  <br/>
+                  <span class="f2">Prof: {data.teacherName}</span>
+                  <br/>
+                  <span class="f2">Turma: {data.groupId}</span>
+                </p>
                 </button>);
               })}
+              
         </div>
       </div>
-  </>
+    </>
     
   );
 }

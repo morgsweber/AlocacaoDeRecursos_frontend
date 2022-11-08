@@ -8,10 +8,10 @@ import calendar from '../.././Icons/calendar.png'
 function Header() {
     return(
         <div class="sidenav">
-            <div><img class="symbol" src={logo} alt="puc_logo"></img></div>
+            <div><b><img class="symbol" src={logo} alt="puc_logo"></img></b></div>
             
             <Link to={".././professor/turmas"}>
-                <a><img class="symbol" src={group} alt="puc_logo"></img></a>
+            <div><a><img class="symbol" src={group} alt="puc_logo"></img></a></div>
             </Link>
 
             <Link to={".././professor/horarios"}>
