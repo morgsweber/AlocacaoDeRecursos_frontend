@@ -32,6 +32,10 @@ export const ProfessorTurmas = () => {
     <> 
         <Sidebar />
         <div class="main">
+          <div class="header">
+            Turmas Ministradas
+          </div>
+
           <div class="main-turmas">
             {turmasJson.map((data, key) => {
             return (
