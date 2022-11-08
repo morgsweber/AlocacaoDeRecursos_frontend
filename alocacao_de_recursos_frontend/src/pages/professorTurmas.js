@@ -1,9 +1,7 @@
 import { withAuthenticationRequired } from "@auth0/auth0-react";
 import Loading from "./loading";
 import Header from "./components/professorTurmasHeader";
-import Footer from "./components/professorTurmasFooter";
 import Sidebar from "./components/sidebar"
-import { useRef, useEffect } from "react";
 import "./pages_css/professorTurmas.css";
 import "./pages_css/sidebar.css";
 
