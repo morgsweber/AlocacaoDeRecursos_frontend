@@ -25,6 +25,22 @@ function GestorTurmas() {
       "sala_original" : "sala orginal",
       "sala_alvo" : "sala alvo",
       "justificativa": "justificativa"
+    },
+    {
+      "discipline" : "disciplina2",
+      "teacher" : "professor2",
+      "groupId" : "turma2",
+      "sala_original" : "sala orginal2",
+      "sala_alvo" : "sala alvo2",
+      "justificativa": "justificativa2"
+    },
+    {
+      "discipline" : "disciplina3",
+      "teacher" : "professor3",
+      "groupId" : "turma3",
+      "sala_original" : "sala orginal3",
+      "sala_alvo" : "sala alvo3",
+      "justificativa": "justificativa3"
     }
   ]
 
