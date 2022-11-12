@@ -49,7 +49,7 @@ function GestorTurmas() {
       <Sidebar />
       <div class="main">
         <div class="header">
-          <p>Disciplinas</p>
+          <p>Gerenciamento de Salas</p>
         </div>
         <div class="main-request">
 
