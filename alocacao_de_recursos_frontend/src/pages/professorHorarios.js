@@ -14,7 +14,7 @@ function ProfessorHorarios() {
 
       <div class="main">
         <div class="header">
-          Grade Horária
+          <p>Grade Horária</p>
         </div>
 
         <div class="ProfessorHorarios">

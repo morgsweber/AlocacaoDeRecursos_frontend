@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { withAuthenticationRequired } from "@auth0/auth0-react";
 import Loading from "./loading";
-import Sidebar from "./components/sidebar";
+import Sidebar from "./components/sidebarGestor";
 
 import api from '../services/api';
 

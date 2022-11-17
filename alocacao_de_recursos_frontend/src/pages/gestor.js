@@ -1,10 +1,19 @@
 import { withAuthenticationRequired } from "@auth0/auth0-react";
 import Loading from "./loading";
+import Sidebar from "./components/sidebarGestor"
+import "./pages_css/base.css";
 
 function Gestor() {
   return (
-    <div class="Gestor">
-      <h2>Gestor</h2>
+    <div>
+      <Sidebar />
+      <div class="main">
+        <div class="header">
+          <p>Gerenciamento de Salas</p>
+        </div>
+
+
+      </div>
     </div>
   );
 }
