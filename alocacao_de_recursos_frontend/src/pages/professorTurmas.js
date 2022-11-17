@@ -9,7 +9,7 @@ import api from '../services/api';
 
 export const ProfessorTurmas = () => {
 
-  const [turmas, setTurmas] = useState([]);
+  const [turmas, setTurmas] = useState('');
 
   useEffect(() => {
     api.get('professor/turmas/36').then(response => {
