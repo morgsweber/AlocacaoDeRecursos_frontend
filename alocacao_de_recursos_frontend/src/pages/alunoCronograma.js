@@ -1,10 +1,19 @@
 import { withAuthenticationRequired } from "@auth0/auth0-react";
 import Loading from "./loading";
+import Sidebar from "./components/sidebar"
+import "./pages_css/base.css";
 
 function AlunoCronograma() {
   return (
-    <div class="AlunoCronograma">
-      <h2>AlunoCronograma</h2>
+    <div>
+      <Sidebar />
+      <div class="main">
+        <div class="header">
+          <p>Horários</p>
+        </div>
+
+
+      </div>
     </div>
   );
 }
