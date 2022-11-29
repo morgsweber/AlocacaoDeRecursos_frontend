@@ -37,12 +37,13 @@ function Gestor() {
           </div>
 
           <div class="info">
-            <div class="b1"><button>Y</button></div>
+            <button class="b1">Y</button>
+          </div>
+          
+          <div class="info">
+            <button class="b1">N</button>
           </div>
 
-          <div class="info">
-            <div  class="b2"><button>N</button></div>
-          </div>
         </div>
 
       </div>
