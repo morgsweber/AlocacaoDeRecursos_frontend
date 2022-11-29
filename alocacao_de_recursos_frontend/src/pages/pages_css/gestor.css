@@ -1,0 +1,31 @@
+.longdiv {
+    padding: 1%;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 90%;
+    margin: 3%;
+    background-color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.info{
+    display: inline-block;
+    margin-left: 1%;
+    vertical-align: top;
+}
+
+.b0{
+    margin-top: 0%;
+}
+
+.b1{
+    float: left;
+    margin-left: 100%;
+}
+
+.b2{
+    float: left;
+    margin-left: 100%;
+}
